@@ -3,6 +3,7 @@ import { asset } from "@/lib/asset";
 import { CHANNELS, NAV, PROJECTS, SITE, SOCIALS } from "@/lib/site-data";
 import { LunarCursor } from "@/components/lunar-cursor";
 import { MoonBadge } from "@/components/moon-badge";
+import { Sigil } from "@/components/sigil";
 import { Portrait } from "@/components/portrait";
 import { Starfield } from "@/components/starfield";
 
@@ -58,12 +59,7 @@ function Header() {
 function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pb-16 pt-12 lg:flex-1 lg:px-16 lg:pb-20 lg:pt-20">
-      <img
-        src={asset("sigil.jpg")}
-        alt=""
-        aria-hidden="true"
-        className="sigil-wash pointer-events-none absolute -right-10 top-6 w-52 opacity-40 lg:right-8 lg:top-10 lg:w-64"
-      />
+      <Sigil />
 
       <div className="stagger-in relative max-w-xl">
         <p className="font-sans text-kicker uppercase tracking-caps text-ice">
@@ -79,7 +75,7 @@ function Hero() {
         </p>
 
         <p className="mt-8 max-w-sm font-display text-2xl font-semibold leading-snug tracking-tight text-moon">
-          сигнал принят.
+          сигнал принят<span className="live-caret" aria-hidden="true" />
         </p>
 
         <p className="mt-4 max-w-md text-body text-mist">
