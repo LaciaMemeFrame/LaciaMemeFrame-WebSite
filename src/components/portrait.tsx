@@ -82,6 +82,9 @@ export function Portrait() {
       />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-void/50 via-transparent to-transparent max-lg:from-transparent max-lg:bg-gradient-to-t max-lg:from-void/75" />
 
+      <div className="scanlines" aria-hidden="true" />
+      <div className="scan-beam" aria-hidden="true" />
+
       <div className="hud-frame" aria-hidden="true">
         <span className="hud-tl" />
         <span className="hud-tr" />

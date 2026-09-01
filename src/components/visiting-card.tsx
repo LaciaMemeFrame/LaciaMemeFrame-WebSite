@@ -44,7 +44,7 @@ function Header() {
           <a
             key={item.href}
             href={item.href}
-            className="inline-flex min-h-11 items-center font-sans text-kicker uppercase tracking-caps text-mist transition-colors duration-200 hover:text-moon"
+            className="nav-link inline-flex min-h-11 items-center font-sans text-kicker uppercase tracking-caps text-mist transition-colors duration-200 hover:text-moon"
           >
             {item.label}
           </a>
@@ -70,7 +70,7 @@ function Hero() {
           {SITE.code} // {SITE.tag}
         </p>
 
-        <h1 className="mt-6 font-display text-display font-extrabold uppercase leading-display tracking-display text-moon">
+        <h1 className="hero-glow mt-6 font-display text-display font-extrabold uppercase leading-display tracking-display text-moon">
           {SITE.name}
         </h1>
 
@@ -92,7 +92,7 @@ function Hero() {
             href={SITE.telegram}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex min-h-11 items-center gap-2 rounded-md bg-moon px-5 font-sans text-sm font-medium tracking-wide text-void transition-transform duration-150 ease-out hover:bg-ice active:scale-[0.98]"
+            className="btn-shine inline-flex min-h-11 items-center gap-2 rounded-md bg-moon px-5 font-sans text-sm font-medium tracking-wide text-void transition-[transform,background-color] duration-150 ease-out hover:bg-ice active:scale-[0.96]"
           >
             написать
             <ArrowUpRight className="size-4" strokeWidth={1.75} />
@@ -101,7 +101,7 @@ function Hero() {
             href={SITE.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex min-h-11 items-center gap-2 rounded-md px-5 font-sans text-sm tracking-wide text-moon shadow-hair transition-shadow duration-200 hover:shadow-hair-hot hover:text-ice active:scale-[0.98]"
+            className="inline-flex min-h-11 items-center gap-2 rounded-md px-5 font-sans text-sm tracking-wide text-moon shadow-hair transition-[box-shadow,color,transform] duration-200 hover:shadow-hair-hot hover:text-ice active:scale-[0.96]"
           >
             github
           </a>
@@ -113,7 +113,7 @@ function Hero() {
 
 function Works() {
   return (
-    <section id="works" className="border-t border-border px-6 py-16 lg:px-16">
+    <section id="works" className="view-in border-t border-border px-6 py-16 lg:px-16">
       <HeaderRow kicker="02" title="созвездие" />
       <ul className="mt-8">
         {PROJECTS.map((p) => (
@@ -122,7 +122,7 @@ function Works() {
               href={p.href}
               target="_blank"
               rel="noreferrer"
-              className="row-hot group grid grid-cols-[auto_1fr_auto] items-baseline gap-x-4 gap-y-1 py-5 pl-3"
+              className="row-hot group grid grid-cols-[auto_1fr_auto] items-baseline gap-x-4 gap-y-1 py-5 pl-3 hover:translate-x-1"
             >
               <span className="font-sans text-sm tabular-nums tracking-wide text-mist group-hover:text-ice">
                 {p.n}
@@ -155,7 +155,7 @@ function Works() {
 
 function Frequencies() {
   return (
-    <section id="freq" className="border-t border-border px-6 py-16 lg:px-16">
+    <section id="freq" className="view-in border-t border-border px-6 py-16 lg:px-16">
       <HeaderRow kicker="03" title="частоты" />
       <ul className="mt-8 grid gap-3 sm:grid-cols-2">
         {CHANNELS.map((c) => (
@@ -164,7 +164,7 @@ function Frequencies() {
               href={c.href}
               target="_blank"
               rel="noreferrer"
-              className="group flex min-h-24 flex-col justify-between rounded-md bg-night p-5 shadow-card transition-shadow duration-200 hover:shadow-card-hot"
+              className="group flex min-h-24 flex-col justify-between rounded-md bg-night p-5 shadow-card transition-[box-shadow,transform] duration-200 ease-out hover:-translate-y-1 hover:shadow-card-hot"
             >
               <span className="flex items-center justify-between gap-3">
                 <span className="font-sans text-kicker uppercase tracking-caps text-mist">
@@ -190,7 +190,7 @@ function Frequencies() {
               href={s.href}
               target="_blank"
               rel="noreferrer"
-              className="group flex min-h-14 items-center justify-between py-2 font-sans text-sm uppercase tracking-caps text-moon transition-colors duration-200 hover:text-ice"
+              className="group flex min-h-14 items-center justify-between py-2 font-sans text-sm uppercase tracking-caps text-moon transition-[color,transform] duration-200 hover:translate-x-1 hover:text-ice"
             >
               {s.label}
               <ArrowUpRight
@@ -207,13 +207,13 @@ function Frequencies() {
 
 function Muse() {
   return (
-    <section id="muse" className="border-t border-border px-6 py-16 lg:px-16">
+    <section id="muse" className="view-in border-t border-border px-6 py-16 lg:px-16">
       <HeaderRow kicker="04" title="муза" />
       <figure className="relative mt-8 overflow-hidden rounded-md shadow-card">
         <img
           src={asset("ranni-art.jpg")}
           alt="Ренни — богиня и муза"
-          className="aspect-video w-full object-cover object-top"
+          className="aspect-video w-full object-cover object-top transition-transform duration-700 ease-out hover:scale-105"
         />
         <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-void via-void/70 to-transparent px-5 py-5">
           <p className="font-sans text-kicker uppercase tracking-caps text-ice">

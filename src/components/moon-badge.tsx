@@ -20,7 +20,7 @@ export function MoonBadge() {
   return (
     <div className="flex items-center gap-3 text-mist">
       <span className="status-dot hidden sm:block" aria-hidden="true" />
-      <svg viewBox="0 0 24 24" className="size-4 text-moon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" className="moon-breathe size-4 text-moon" aria-hidden="true">
         <defs>
           <mask id="moon-mask">
             <rect width="24" height="24" fill="black" />
