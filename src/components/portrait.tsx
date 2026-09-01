@@ -55,7 +55,7 @@ export function Portrait() {
     >
       {reduce ? (
         <img
-          src={asset("ranni-poster.jpg")}
+          src={asset("ranni-art.jpg")}
           alt="Ренни — богиня и муза"
           className="object-muse h-full w-full"
         />
@@ -66,10 +66,10 @@ export function Portrait() {
           muted
           loop
           playsInline
-          poster={asset("ranni-poster.jpg")}
+          poster={asset("ranni-art.jpg")}
           aria-label="Ренни — богиня и муза"
         >
-          <source src={asset("ranni-portrait.mp4")} type="video/mp4" />
+          <source src={asset("ranni-live.mp4")} type="video/mp4" />
         </video>
       )}
 
