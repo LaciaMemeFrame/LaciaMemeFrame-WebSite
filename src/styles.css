@@ -94,18 +94,20 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: 50% 12%;
+  object-position: 50% 8%;
 }
 
 .portrait-panel {
-  height: 78svh;
+  width: 100%;
+  aspect-ratio: 3 / 4;
 }
 
 @media (min-width: 1024px) {
   .portrait-panel {
+    aspect-ratio: auto;
     height: 100dvh;
-    width: min(38vw, calc(100dvh * 2 / 3));
-    max-width: 42rem;
+    width: min(48vw, calc(100dvh * 3 / 4), 1200px);
+    max-width: 1200px;
     justify-self: end;
   }
 }
