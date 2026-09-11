@@ -213,13 +213,13 @@ function Muse() {
         />
         <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-void via-void/70 to-transparent px-5 py-5">
           <p className="font-sans text-kicker uppercase tracking-caps text-ice">
-            frame // renni
+            frame // ranni's rise
           </p>
         </figcaption>
       </figure>
       <blockquote className="mt-8 max-w-lg">
         <p className="font-display text-title font-semibold leading-snug tracking-tight text-moon">
-          Ренни. ведьма, что украла смерть и пошла против судьбы в звёздах.
+          Ренни. кукла снежной ведьмы на вершине своей башни — Ranni's Rise, Три Сестры, Лиурния.
         </p>
         <p className="mt-6 text-body text-mist">
           смотреть можно. трогать — нет. поэтому смотрят дольше. я не молюсь —
