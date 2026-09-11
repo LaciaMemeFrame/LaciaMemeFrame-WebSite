@@ -19,7 +19,7 @@ export function VisitingCard() {
         {SITE.code} · {SITE.handle}
       </p>
 
-      <div className="relative z-10 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(280px,44vw)]">
+      <div className="relative z-10 lg:grid lg:grid-cols-[minmax(0,1fr)_auto]">
         <aside className="portrait-panel relative overflow-hidden lg:sticky lg:top-0 lg:z-20 lg:order-2 lg:col-start-2 lg:row-span-full lg:self-start">
           <Portrait />
         </aside>

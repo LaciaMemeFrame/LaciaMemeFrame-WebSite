@@ -57,11 +57,11 @@ export function Portrait() {
         <img
           src={asset("ranni-close.jpg")}
           alt="Ренни — богиня и муза"
-          className="object-muse h-full w-full"
+          className="object-muse"
         />
       ) : (
         <video
-          className="object-muse h-full w-full"
+          className="object-muse"
           autoPlay
           muted
           loop
